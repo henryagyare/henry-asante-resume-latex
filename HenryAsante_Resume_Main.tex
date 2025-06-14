@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Henry Agyare Asante} \\ \vspace{1pt}
+    403 Main St, Grambling, Louisiana \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 214.685.8733 ~ \href{mailto:henryagyare0@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{henryagyare0@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/henry-asante/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/henry-asante}}  ~
+    \href{https://github.com/henryagyare}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/henryagyare}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Grambling State University (GSU)}{Aug. 2024 -- May 2028}
+      {Bachelor of Science in Computer Science}{Grambling, Louisiana}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\textbf{Relevant Coursework:} Data Structures and Algorithms, Discrete Structures, Calculus, Data Analytics, Statistics \\
+\vspace{2pt}
+% -----SKILLS-----------
+\textbf{Skills:} Python, JavaScript, React.js, Node.js, SQL, Git, Java, Agile Methodologies, Linux, RESTful APIs, HTML/CSS, MongoDB, Docker, CI/CD, JUnit, OpenAI API, SBERT
+\vspace{-10pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dell Technologies}{May 2025 -- August 2025}
+      {Software Engineer Intern}{Austin, Texas}
+      \resumeItemListStart
+        \resumeItem{Developed an AI-driven test case recommendation system that improved regression testing analysis speed by 40\%, by extracting, transforming, and embedding Jira story data via REST APIs using Python and SBERT.}
+        \resumeItem{Reduced test mapping errors by 60\% by replacing static Jira–qTest associations with a vector similarity engine, enabling smarter test selection through semantic matching of embedded story descriptions.}
+        \resumeItem{Integrated Jira, qTest, and LLM-based models into a modular backend service, accelerating internal test cycles by 30\%, and deployed a working prototype in collaboration with QA and DevOps teams for live evaluation and feedback.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AmaliTech NSP Training}{May 2024 -- August 2024}
+      {Software Developer Trainee}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built a responsive, quiz app using React.js and JavaScript, allowing users to take quizzes, track scores in real time, and review detailed results, enhancing user engagement through dynamic state management and component-based design.}
+        \resumeItem{Implemented a RESTful API with Node.js and Express to handle quiz data, user authentication, and score tracking, ensuring secure and efficient data management with JWT-based authentication and MongoDB for persistent storage.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {KNUST Electrical Engineering Department}{August 2023 -- November 2023}
+      {Full Stack Engineering Intern}{Kumasi, Ghana}
+      \resumeItemListStart
+        \resumeItem{Developed a cross-platform circuit simulation tool with Vue.js, Electron, and Python, incorporating an AI-driven feedback system that served over 2,000 academic users.}
+        \resumeItem{Reduced simulation latency by 35\% by optimizing simulation workflows, implementing CI/CD pipelines, and designing a scalable database schema to support real-time analysis of analog, digital, and logic gate circuits}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Agisam Academy}{Sep 2021 -- July 2023}
+      {IT Support Specialist \& Administrative Assistant}{Accra, Ghana}
+      \resumeItemListStart
+        \resumeItem{Built a custom desktop automation suite using pandas, openpyxl, and SQL, streamlining student records, fee tracking, and classroom analytics; reduced data processing time by ~40\% and deployed tools still used daily across departments.}
+        \resumeItem{Improved org infrastructure uptime by 60\% by configuring and maintaining routers, switches, and Windows workstations; provided Tier 1–2 support for Wi-Fi and OS reimaging using standard diagnostic tools and command-line utilities.}
+        \resumeItem{Optimized scheduling and internal communication workflows by integrating Google Workspace APIs, enabling auto-generated calendars, shared reports, and email alerts that reduced scheduling conflicts and manual follow-up effort.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{StrokeSync - Remote Stroke Consultation Platform} $|$ \emph{Python, Flask, SQL, JavaScript, HTML/CSS}}{April 2025}
+          \resumeItemListStart
+            \resumeItem{Deployed a web platform using Flask, SQL, and JS to enable stroke units transmit patient vitals to remote neurologists.} 
+            \resumeItem{Reduced manual coordination efforts by 70\% by automating NIHSS scoring and consultation alerts.}
+            \resumeItem{Designed a responsive and accessibility-focused UI for field technicians and implemented a secure SQL-backed data layer to support longitudinal patient records, real-time updates, and role-based data access.} % Removed extra comma
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{VoTran} $|$ \emph{Hackathon Project (5-hour build)} $|$ \emph{React.js, HTML, CSS, OpenAI Whisper}}{September 2024} % Fixed parentheses
+          \resumeItemListStart
+            \resumeItem{Led frontend development in a team of 5 to build VoTran, a real-time language learning app featuring voice-to-text transcription, multi-language translation, and audio playback, powered by OpenAI’s GPT API.}
+            \resumeItem{Built an intuitive UI in React.js, using modular components, React hooks, and efficient state management.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{BrillaAI – STEM Question Synthesis Platform} $|$ \emph{Python, LoRA, LLaMA-3 8B, Unsloth, SQL, pandas}}{April 2024}
+          \resumeItemListStart
+            \resumeItem{Generated 15,600+ high-quality STEM question-answer pairs by fine-tuning the LLaMA-3 8B model using LoRA adapters and 4-bit quantization via Unsloth, improving memory efficiency by 25\% on a Tesla T4 GPU.}
+            \resumeItem{Reduced training time by 2x through optimized model configuration using gradient checkpointing, 8-bit optimizers, and custom prompts with instruction-tuned formatting; improved token generation reliability for long-context tasks.}
+            \resumeItem{Cleaned, formatted, and stored structured QA data using pandas and SQL, ensuring reproducibility, minimizing formatting drift, and enabling scalable access for downstream evaluation and inference deployment.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\end{document}
